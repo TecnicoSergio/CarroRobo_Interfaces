@@ -5,17 +5,17 @@ public class AutoRobo implements OperaCarro {
 
     public String Direcao;
     public String Virar;
-    public String Raio;
-    public String VelocidadeInicial;
-    public String VelocidadeFinal;
+    public int Raio;
+    public double VelocidadeInicial;
+    public double VelocidadeFinal;
     public String MudarDeFaixa;
     public String SinalVirar;
     public String SinalizadorLigado;
     public String GiroDoRadar;
     public String RadarTraseiro;
     public String RadarFrontal;
-    public String VelocidadeCarro;
-    public String DistanciaCarro;
+    public double VelocidadeCarro;
+    public int DistanciaCarro;
 
 
 
@@ -25,10 +25,10 @@ public class AutoRobo implements OperaCarro {
     }
 
     public AutoRobo(
-            String direcao, String virar, String raio, String velocidadeInicial,
-            String velocidadeFinal, String mudarDeFaixa, String sinalVirar,
+            String direcao, String virar, int raio, double velocidadeInicial,
+            double velocidadeFinal, String mudarDeFaixa, String sinalVirar,
             String sinalizadorLigado, String giroDoRadar, String radarTraseiro,
-            String radarFrontal, String velocidadeCarro, String distanciaCarro) {
+            String radarFrontal, double velocidadeCarro, int distanciaCarro) {
         Direcao = direcao;
         Virar = virar;
         Raio = raio;
@@ -60,27 +60,27 @@ public class AutoRobo implements OperaCarro {
         Virar = virar;
     }
 
-    public String getRaio() {
+    public int getRaio() {
         return Raio;
     }
 
-    public void setRaio(String raio) {
+    public void setRaio(int raio) {
         Raio = raio;
     }
 
-    public String getVelocidadeInicial() {
+    public double getVelocidadeInicial() {
         return VelocidadeInicial;
     }
 
-    public void setVelocidadeInicial(String velocidadeInicial) {
+    public void setVelocidadeInicial(double velocidadeInicial) {
         VelocidadeInicial = velocidadeInicial;
     }
 
-    public String getVelocidadeFinal() {
+    public double getVelocidadeFinal() {
         return VelocidadeFinal;
     }
 
-    public void setVelocidadeFinal(String velocidadeFinal) {
+    public void setVelocidadeFinal(double velocidadeFinal) {
         VelocidadeFinal = velocidadeFinal;
     }
 
@@ -132,19 +132,19 @@ public class AutoRobo implements OperaCarro {
         RadarFrontal = radarFrontal;
     }
 
-    public String getVelocidadeCarro() {
+    public double getVelocidadeCarro() {
         return VelocidadeCarro;
     }
 
-    public void setVelocidadeCarro(String velocidadeCarro) {
+    public void setVelocidadeCarro(double velocidadeCarro) {
         VelocidadeCarro = velocidadeCarro;
     }
 
-    public String getDistanciaCarro() {
+    public int getDistanciaCarro() {
         return DistanciaCarro;
     }
 
-    public void setDistanciaCarro(String distanciaCarro) {
+    public void setDistanciaCarro(int distanciaCarro) {
         DistanciaCarro = distanciaCarro;
     }
 
